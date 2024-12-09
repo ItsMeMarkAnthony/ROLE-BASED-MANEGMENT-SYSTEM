@@ -223,7 +223,7 @@ $result = $conn->query($sql);
 
     <main>
         <div id="dynamic-content" style="padding: 20px;">
-            <h1>Welcome to Holy Infant Academy Role-Based <br> Management System</h1>
+            <h1>Welcome to Role-Based <br> Management Platform</h1>
            
         </div>
     <br> <br> <br> 

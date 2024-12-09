@@ -59,9 +59,9 @@ Admins have full control over the system. They manage user approvals, update use
 ## Installation and Setup
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/academic-management-platform.git
+   git clone https://github.com/ItsMeMarkAnthony/ROLE-BASED-MANEGMENT-SYSTEM.git
 
-   ## Setup Instructions for PHP
+   
 
 This platform is developed using PHP. To run it locally, please follow these steps:
 

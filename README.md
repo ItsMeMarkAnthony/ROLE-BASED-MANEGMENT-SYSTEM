@@ -40,19 +40,19 @@ Admins have full control over the system. They manage user approvals, update use
 
 1. **Teacher Dashboard**  
    
-   ![Teacher Dashboard](screenshots/teacher.png)
+   ![Teacher Dashboard](screenshots/homepage.png)
 
 2. **Student Dashboard**  
      
-   ![Student Dashboard](screenshots/student_dashboard.png)
+   ![Student Dashboard](screenshots/admin.png)
 
 3. **Admin Dashboard**  
     
-   ![Admin User Management](screenshots/admin.png)
+   ![Admin User Management](screenshots/teacher.png)
 
 4. **Home Page**  
    
-   ![Attendance Management](screenshots/homepage.png)
+   ![Attendance Management](screenshots/student_dashboard.png)
 
 ---
 

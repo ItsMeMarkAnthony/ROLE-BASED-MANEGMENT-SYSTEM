@@ -16,23 +16,68 @@ $result = $conn->query($sql);
     <style>
         /* Global Styles */
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            text-align: center;
-            line-height: 1.6;
-            transition: all 0.3s ease;
+            
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    text-align: center;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    overflow-x: hidden; 
+    padding-top: 80px; 
+
+
+    }
+
+    /* Gradient Animation Keyframes */
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%;
         }
-        h1, h2, p {
-            margin: 0;
-            color: #333;
-            text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Glow effect */
+        50% {
+            background-position: 100% 50%;
         }
+        100% {
+            background-position: 0% 50%;
+        }
+
+        }
+    
+    /* Glow Effect */
+    #dynamic-content h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 
+                     0 0 30px rgba(255, 255, 255, 0.6),
+                     0 0 45px rgba(255, 255, 255, 0.4);
+        animation: glowFade 3s infinite alternate ease-in-out;
+    }
+
+    /* Fade In-Out Animation */
+    @keyframes glowFade {
+        0% {
+            opacity: 0.7;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                         0 0 20px rgba(255, 255, 255, 0.6), 
+                         0 0 30px rgba(255, 255, 255, 0.4);
+        }
+        100% {
+            opacity: 1;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 1), 
+                         0 0 40px rgba(255, 255, 255, 0.8), 
+                         0 0 60px rgba(255, 255, 255, 0.6);
+        }
+    }
+
+
         a {
             text-decoration: none;
             color: inherit;
@@ -40,15 +85,17 @@ $result = $conn->query($sql);
 
        
         header {
-            background-color: #004d7a;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+         
+    background-color: #004d7a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
         }
 
         footer {

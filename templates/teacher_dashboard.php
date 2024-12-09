@@ -199,7 +199,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'teacher') {
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Holy Infant Academy. All rights reserved.</p>
+        <p>&copy; 2024 Cedar College Inc. All rights reserved.</p>
     </footer>
 
 </body>

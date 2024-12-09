@@ -228,22 +228,22 @@ $result = $conn->query($sql);
         </div>
     <br> <br> <br> 
         <!-- Display dynamic images with descriptions from the database -->
-        <div class="image-gallery">
-            <?php
-            // Check if there are any records
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    echo '<div class="image-container">';
-                    echo '<img src="' . $row['image_path'] . '" alt="Image" class="floating-image">';
-                    echo '<div class="image-description">' . $row['description'] . '</div>';
-                    echo '</div>';
+            <div class="image-gallery">
+                <?php
+                // Check if there are any records
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo '<div class="image-container">';
+                        echo '<img src="' . $row['image_path'] . '" alt="Image" class="floating-image">';
+                        echo '<div class="image-description">' . $row['description'] . '</div>';
+                        echo '</div>';
+                    }
+                } else {
+                    echo '<p>No images available.</p>';
                 }
-            } else {
-                echo '<p>No images available.</p>';
-            }
-            ?>
-        </div>
-    </main>
+                ?>
+            </div>
+        </main>
 
     <footer>
     <div class="social-icons">

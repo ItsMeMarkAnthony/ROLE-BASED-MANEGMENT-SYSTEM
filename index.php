@@ -20,7 +20,7 @@ $result = $conn->query($sql);
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f9;
+    background-color: #1E3A8A;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -28,9 +28,10 @@ $result = $conn->query($sql);
     text-align: center;
     line-height: 1.6;
     transition: all 0.3s ease;
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
-    background-size: 400% 400%;
-    animation: gradientShift 10s ease infinite;
+    background: linear-gradient(45deg, #1E3A8A, #4CAF50, #FFEB3B, #FFFFFF);
+background-size: 400% 400%;
+animation: gradientShift 10s ease infinite;
+
     overflow-x: hidden; 
     padding-top: 80px; 
 
@@ -85,16 +86,78 @@ $result = $conn->query($sql);
 
        
         header {
-         
     background-color: #004d7a;
     color: white;
     padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Keep buttons on both sides */
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+    flex-wrap: nowrap; /* Prevent wrapping to ensure buttons stay on their respective sides */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for visibility */
+}
+
+body {
+    padding-top: 80px; /* Adjust for fixed header */
+}
+
+header .left-buttons, header .right-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+header .left-buttons {
+    flex: 1; /* Aligns left buttons to the left side */
+    justify-content: flex-start;
+}
+
+header .right-buttons {
+    flex: 1; /* Aligns right buttons to the right side */
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header .left-buttons button, header .right-buttons button {
+    background-color: #006699;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header .left-buttons button:hover, header .right-buttons button:hover {
+    background-color: #005b7f;
+    transform: scale(1.05);
+}
+
+header .left-buttons button:active, header .right-buttons button:active {
+    background-color: #004d7a;
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center; 
+    }
+    
+    .left-buttons, .right-buttons {
+        justify-content: center; 
+        width: 100%; 
+    }
+
+
 
         }
 
@@ -270,11 +333,11 @@ $result = $conn->query($sql);
 
     <main>
         <div id="dynamic-content" style="padding: 20px;">
-            <h1>Welcome to Role-Based <br> Management Platform</h1>
+            <h1>Welcome to Role-Based <br> School Management System</h1>
            
         </div>
     <br> <br> <br> 
-        <!-- Display dynamic images with descriptions from the database -->
+        
             <div class="image-gallery">
                 <?php
                 // Check if there are any records

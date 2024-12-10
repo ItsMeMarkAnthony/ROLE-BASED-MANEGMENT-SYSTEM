@@ -1,4 +1,4 @@
-#  Role-Based Management Platform 
+#  Role-Based School Management System (RBSMS)
 
 ## Documentation Disclaimer
 Please note that the documentation is still in progress and not yet finalized. We will upload the completed documentation here as soon as possible. 
@@ -7,18 +7,19 @@ Please note that the documentation is still in progress and not yet finalized. W
 Please note that the system is currently under development. Some features and functionalities may not be fully operational yet. We are working diligently to enhance the platform, and updates will be provided as new functionalities are added. 
 
 ## Summary
-The  Role-Based  Management Platform is a web-based system designed to streamline academic management processes in educational institutions. It focuses on role-specific access for three user types—teachers, students, and admins—allowing for efficient operations such as student admissions, teacher management, attendance tracking, and communication. 
+The Role-Based School Management System is a web-based solution designed to streamline and optimize academic management processes in educational institutions. By implementing role-specific access for three key user groups—Teachers, Students, and Admins—the system ensures secure and efficient handling of tasks such as student admissions, teacher management, attendance tracking, and announcement dissemination. This system enhances productivity and organization within the school environment by automating essential operations and delivering features tailored to each user's responsibilities.
+
 
 ## User Descriptions
 
 ### Teachers
-Teachers can log in to the platform after being approved by the admin. They are responsible for marking attendance, viewing past attendance records, and posting notices or task reminders. Teachers have a dashboard to manage their classroom activities.
+Teachers: Added by the admin, teachers gain access to their dashboards upon approval. From their dashboard, they can take attendance, view historical attendance records, and post notices, such as assignment deadlines or class announcements.
 
 ### Students
-Once approved by the admin, students can register and log in to their personal dashboards. They can view their own data, including attendance, but they cannot modify other users’ information or post announcements.
+Students can register for admission, and upon admin approval, they can log in to their personalized dashboards to view personal details such as attendance records and announcements. Students cannot access or modify other users’ data or post any announcements.
 
 ### Admins
-Admins have full control over the system. They manage user approvals, update user information, and post school-wide announcements. Admins also oversee system maintenance, ensuring smooth operations and data security.
+Admins have complete control over the system. They manage the approval or rejection of teacher and student applications, update user details, and publish school-wide notices. Their role ensures proper governance, maintenance, and data security within the system.
 
 ## System Features by User Role
 
@@ -27,11 +28,11 @@ Admins have full control over the system. They manage user approvals, update use
 - Teachers have the ability to post notices or reminders for upcoming assignments and deadlines.
 
 ### Student Role
-- Students can view personal information, including their attendance records, and keep track of their academic performance.
+- Students can view personal information, including their attendance records.
 - Students are restricted from modifying others' data.
 
 ### Admin Role
-- Admins manage user accounts (approve or reject applications), handle data updates, and post school-wide announcements or notices.
+- Admins manage user accounts (approve or reject applications),and post school-wide announcements or notices.
 - Admins maintain system security by ensuring proper user access controls and system upkeep.
 
 ---
@@ -40,7 +41,7 @@ Admins have full control over the system. They manage user approvals, update use
 
 1. **Teacher Dashboard**  
    
-   ![Teacher Dashboard](screenshots/homepage.png)
+   ![Teacher Dashboard](screenshots/homepage(2).png)
 
 2. **Student Dashboard**  
      
@@ -77,6 +78,6 @@ This platform is developed using PHP. To run it locally, please follow these ste
    Open the XAMPP Control Panel and start the Apache server.
 
 4. **Access the Project in Your Browser**  
-   Open your web browser and go to: localhost/RoleBasedManagementPlatform 
+   Open your web browser and go to: localhost/RBSMS
 
 

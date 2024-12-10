@@ -39,21 +39,23 @@ Admins have complete control over the system. They manage the approval or reject
 
 ## Screenshots 
 
-1. **Teacher Dashboard**  
+
+
+1. **Homepage Dashboard**  
    
-   ![Teacher Dashboard](screenshots/homepage(2).png)
+   (screenshots/homepage.png)
 
-2. **Student Dashboard**  
-     
-   ![Student Dashboard](screenshots/admin.png)
+2. **Admin Dashboard**  
 
-3. **Admin Dashboard**  
+ (screenshots/admin.png)
+
+3. **Teachers Dashboard**  
     
-   ![Admin User Management](screenshots/teacher.png)
+   (screenshots/teacher.png)
 
-4. **Home Page**  
+4. **Student Page**  
    
-   ![Attendance Management](screenshots/student_dashboard.png)
+ (screenshots/student_dashboard.png)
 
 ---
 

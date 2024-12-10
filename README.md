@@ -48,8 +48,8 @@ Admins have complete control over the system. They manage the approval or reject
 3. **Teachers Dashboard**  
    ![Teachers Dashboard](screenshots/teacher.png)
 
-4. **Student Page**  
-   ![Student Page](screenshots/student_dashboard.png)
+4. **Student Dashboard**  
+   ![Student Dashboard](screenshots/student_dashboard.png)
 
 ---
 

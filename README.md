@@ -37,27 +37,22 @@ Admins have complete control over the system. They manage the approval or reject
 
 ---
 
-## Screenshots 
-
-
+## Screenshots
 
 1. **Homepage Dashboard**  
-   
-   (screenshots/homepage.png)
+   ![Homepage Dashboard](screenshots/homepage.png)
 
 2. **Admin Dashboard**  
-
- (screenshots/admin.png)
+   ![Admin Dashboard](screenshots/admin.png)
 
 3. **Teachers Dashboard**  
-    
-   (screenshots/teacher.png)
+   ![Teachers Dashboard](screenshots/teacher.png)
 
 4. **Student Page**  
-   
- (screenshots/student_dashboard.png)
+   ![Student Page](screenshots/student_dashboard.png)
 
 ---
+
 
 ## Installation and Setup
 1. Clone this repository to your local machine.

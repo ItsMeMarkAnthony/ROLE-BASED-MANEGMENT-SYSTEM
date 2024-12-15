@@ -230,82 +230,84 @@ header .left-buttons button:active, header .right-buttons button:active {
         }
 
         /* Image Hover Effect */
-        .image-container {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            margin: 20px;
-            display: inline-block;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
+        /* Image Hover Effect */
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 200px; /* Updated for circular effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
 
-        .image-container:hover {
-            transform: scale(1.05) rotate(1deg);
-        }
+.image-container:hover {
+    transform: scale(1.05) rotate(1deg);
+}
 
-        .floating-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-        }
+.floating-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
 
-        .image-container:hover .floating-image {
-            transform: scale(1.1);
-        }
+.image-container:hover .floating-image {
+    transform: scale(1.1);
+}
 
-        .image-description {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 15px;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
-        }
+.image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-bottom-left-radius: 200px; /* Match the border radius */
+    border-bottom-right-radius: 200px; /* Match the border radius */
+}
 
-        .image-container:hover .image-description {
-            opacity: 1;
-        }
+.image-container:hover .image-description {
+    opacity: 1;
+}
 
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            header, footer {
-                flex-direction: column;
-                text-align: center;
-            }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
 
-            .left-buttons, .right-buttons {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-            }
+    .left-buttons, .right-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-            .image-gallery {
-                flex-direction: column;
-                gap: 10px;
-            }
+    .image-gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-            .image-container {
-                width: 100%;
-                max-width: 350px;
-            }
-        }
+    .image-container {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
     </style>
     <!-- Include Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">

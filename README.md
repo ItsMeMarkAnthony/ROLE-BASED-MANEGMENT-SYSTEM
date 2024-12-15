@@ -1,7 +1,6 @@
 #  Role-Based School Management System (RBSMS)
 
-## Documentation Disclaimer
-Please note that the documentation is still in progress and not yet finalized. We will upload the completed documentation here as soon as possible. 
+
 
 ## Disclaimer
 Please note that the system is currently under development. Some features and functionalities may not be fully operational yet. We are working diligently to enhance the platform, and updates will be provided as new functionalities are added. 
